@@ -468,6 +468,12 @@ header {
   font-weight: 900;
   font-size: 1.7rem;
 }
+.testimonials .pc-card {
+  display: none;
+}
+.testimonials .pc-card2 {
+  display: none;
+}
 .testimonials .card {
   position: relative;
   border-radius: 0;
@@ -529,6 +535,9 @@ header {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
+}
+.testimonials .card .name h3 {
+  color: rgb(30, 0, 132);
 }
 
 .products {
@@ -661,6 +670,7 @@ footer ul i {
 footer form {
   display: flex;
   width: 80%;
+  margin-top: 1em;
 }
 footer form input {
   width: 80%;
@@ -675,6 +685,19 @@ footer form button {
 footer form input, footer form button {
   outline: none;
   border: none;
+}
+footer form input {
+  background: rgba(255, 255, 255, 0.22);
+}
+footer form input::-moz-placeholder {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  padding-left: 0.5em;
+}
+footer form input::placeholder {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  padding-left: 0.5em;
 }
 footer .facebook-button {
   background: rgb(23, 123, 246);
@@ -716,6 +739,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 576px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  .pc-card {
+    display: block !important;
+  }
+  .pc-card2 {
+    display: none;
+  }
   .slider-section .card-section {
     width: 98vw;
   }
@@ -725,6 +754,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .pc-card2 {
+    display: block !important;
+  }
   .slider-section .card-section {
     width: 90vw;
   }

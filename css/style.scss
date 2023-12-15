@@ -221,7 +221,8 @@ header{ height: 80vh;
     color: $green; font-family: $poppins; font-weight: 100; font-size: 2rem;
     
 }
-// .pc-card{display: none;}
+.pc-card{display: none;}
+.pc-card2{display: none;}
 .card{position: relative; border-radius: 0; height: 16rem; max-width: 90%;
     .quote{ position: absolute; top: 0rem; left: 1rem; font-family: $poppins; font-weight: 900; font-size: 5rem; border-radius: -4rem; }
     p{width: 90%; text-align: left; padding-left: 1em;}
@@ -234,7 +235,9 @@ header{ height: 80vh;
             img{object-fit: contain; height: 80%; width: 80%; margin-left: 2em; }
             }
     }
-    .name{ font-family: $poppins; font-weight: 600; font-size: 1.2rem; }
+    .name{ font-family: $poppins; font-weight: 600;  font-size: 1.2rem;
+    h3{color: $icon ;}
+    }
 
 }
 }
@@ -279,9 +282,11 @@ footer{ background: $icon; background: $dark-blue; color: white;
     ul{display: flex;flex-direction: column; gap: 1rem ;
     i{color: $light-blue;}
     }
-    form{display: flex; width: 80%; input{width: 80%; height: 2.1rem;}
+    form{display: flex; width: 80%; input{width: 80%; height: 2.1rem;} margin-top: 1em;
          button{width: 20%; background: $light-blue; color: white;height: 2.1rem; } 
-        input, button{outline: none; border: none; }
+        input, button{outline: none; border: none;  }
+        input{background: rgba(255, 255, 255, 0.22);}
+        input::placeholder{color: white; font-family: $rubik; padding-left: 0.5em; }
     }
     .facebook-button{ background: $light-blue; font-family: $rubik;  color: white; border: none; padding: 0.8rem 1.3rem; }
     .flex-container{display: flex;   gap: 1em; margin-bottom: 1em;
@@ -317,6 +322,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
+.pc-card{display: block !important;}
+.pc-card2{display: none;}
     .slider-section{ 
         .card-section{ width: 98vw;
             .card{max-width: 19rem;}
@@ -329,6 +336,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    .pc-card2{display: block !important;}
     .slider-section{ 
         .card-section{ width: 90vw;
             .card{max-width: 23rem;}
