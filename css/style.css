@@ -752,7 +752,7 @@ footer .flex-container .img-container {
   height: 2rem;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center !important;
   background: rgb(2, 6, 60);
   border-top: 1px solid white;
   text-align: center;
@@ -762,7 +762,7 @@ footer .flex-container .img-container {
 }
 
 .products-header {
-  height: 40vh;
+  height: 25vh;
   position: relative;
   z-index: -2;
   background-image: unset;
@@ -796,6 +796,90 @@ footer .flex-container .img-container {
   font-size: 1.3rem;
 }
 
+.products-bar {
+  width: 90%;
+  display: none;
+}
+
+.products-section .flex-container {
+  display: flex;
+}
+.products-section .card {
+  width: 19rem;
+  height: 20rem !important;
+  border: none;
+  box-shadow: 1px 3px 18px -12px #000000;
+  border-radius: 5px;
+}
+.products-section .card .img-container {
+  width: 19rem;
+  background-color: green;
+}
+.products-section .card .img-container img {
+  width: 100%;
+  height: 100%;
+}
+.products-section .card .body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.products-section .card .body h6 {
+  color: rgba(0, 0, 0, 0.714);
+  font-family: "Poppins", sans-serif;
+}
+.products-section .card .body h3 {
+  color: rgb(30, 0, 132);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.products-section .products-container {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.products-section .categories-container {
+  margin-top: 2rem;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+.products-section .categories-container .flex-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.products-section .categories-container .flex-container h2 {
+  font-family: "Poppins", sans-serif;
+}
+.products-section .categories-container .flex-container .line {
+  height: 3px;
+  width: 3rem;
+  background-color: rgb(23, 123, 246);
+}
+.products-section .categories-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.products-section .categories-container ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+}
+.products-section .categories-container ul li a {
+  font-family: "Poppins", sans-serif;
+  color: rgb(30, 0, 132);
+  text-decoration: none;
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -812,6 +896,42 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 576px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  .products-section .products-container {
+    width: 60%;
+  }
+  .products-section .categories-container {
+    display: block;
+    width: 40%;
+  }
+  .products-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .products-bar-container .products-bar {
+    display: block;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .products-bar-container .products-bar h5 {
+    font-family: "Poppins", sans-serif;
+  }
+  .products-bar-container .products-bar .flex-container {
+    display: flex;
+    gap: 1em;
+  }
+  .products-bar-container .products-bar .flex-container input::-moz-placeholder {
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+  }
+  .products-bar-container .products-bar .flex-container input::placeholder {
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+  }
+  .products-bar-container .products-bar .flex-container input {
+    padding: 0.3rem;
+  }
   .pc-card {
     display: block !important;
   }

@@ -301,14 +301,14 @@ footer{ background: $icon; background: $dark-blue; color: white;
 
     
 }
-.bottom{ color: $gold;font-weight: 400; font-family: $poppins; height: 2rem; display: flex; justify-content: flex-end; align-items: center; background: $dark-blue; border-top: 1px solid white; text-align: center; 
+.bottom{ color: $gold;font-weight: 400; font-family: $poppins; height: 2rem; display: flex; justify-content: flex-end; align-items: center !important; background: $dark-blue; border-top: 1px solid white; text-align: center; 
         span{a{color: $light-blue;}}
 }
 
 
 // products Styles
 
-.products-header{ height: 40vh; position: relative; z-index: -2;
+.products-header{ height: 25vh; position: relative; z-index: -2;
     .stars{position: absolute; right: 0rem;  animation: alternateSize 2s ease-in-out infinite;  }
     background-image: unset;
     // background-image: url('../images/stars.png'); background-repeat: no-repeat; background-position-x: right;
@@ -322,7 +322,38 @@ footer{ background: $icon; background: $dark-blue; color: white;
     }
 }
 
+// .products-bar-container{}
+.products-bar{ width: 90%;  display: none;
+   
+}
 
+.products-section{ 
+    .flex-container{display: flex;   }
+    .card{width: 19rem ; height: 20rem !important; border: none; box-shadow: 1px 3px 18px -12px #000000; border-radius: 5px;
+    .img-container{width: 19rem; background-color: green;
+    img{width: 100%; height: 100%; }
+    }
+    .body{display: flex; flex-direction: column; gap: 0.5rem; align-items: center; justify-content: center; height: 100%; width: 100%;
+    h6{color: rgba(0, 0, 0, 0.714); font-family: $poppins;}
+    h3{color: $icon; font-family:$poppins; font-weight: 600; font-size: 1.3rem; }
+    }
+    }
+
+.products-container{display: flex; gap: 1em; align-items: center; flex-wrap: wrap;  margin-top: 2rem;}
+.categories-container{ margin-top: 2rem; display: flex; display: none; flex-direction: column; align-items: center; width: 45%; 
+    .flex-container{ display: flex; align-items: center; gap: 1rem;
+        h2{font-family: $poppins;  }
+        .line{height: 3px; width: 3rem; background-color: $light-blue;}
+  
+    }
+    ul{ display: flex; flex-direction: column; gap: 0.5em;
+        li{ border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+            a{font-family: $poppins; color: $icon; text-decoration: none;}
+        }
+    }
+}
+
+}
 
 /*
 ####################################################
@@ -348,6 +379,21 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
+.products-section{
+    .products-container{width: 60%;}
+    .categories-container{display: block; width: 40%; }
+}
+.products-bar-container{ display: flex; align-items: center; justify-content: center;
+    .products-bar{display: block;
+        margin-top: 2rem;  display: flex;justify-content: space-between;
+        h5{font-family: $poppins;}
+        .flex-container{display: flex; gap: 1em;
+        input::placeholder{font-family: $poppins; text-transform: capitalize;}
+        input{padding: 0.3rem ;}
+        }
+    }
+
+}
 .pc-card{display: block !important;}
 .pc-card2{display: none;}
     .slider-section{ 
