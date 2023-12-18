@@ -485,14 +485,14 @@ header .text-container a {
   color: rgb(30, 0, 132);
   font-family: "Rubik", sans-serif;
 }
-.testimonials h2 {
+.testimonials h3 {
   margin-top: 0.4em;
   color: rgb(30, 0, 132);
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-size: 2rem;
 }
-.testimonials h2 span {
+.testimonials h3 span {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-size: 1.7rem;
@@ -560,13 +560,11 @@ header .text-container a {
   width: 80%;
   margin-left: 2em;
 }
-.testimonials .card .name {
+.testimonials .card .name h3 {
+  color: rgb(30, 0, 132);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
-}
-.testimonials .card .name h3 {
-  color: rgb(30, 0, 132);
 }
 
 .products {
@@ -717,6 +715,7 @@ footer form input, footer form button {
 }
 footer form input {
   background: rgba(255, 255, 255, 0.22);
+  border-radius: 0;
 }
 footer form input::-moz-placeholder {
   color: white;
@@ -771,6 +770,11 @@ footer .flex-container .img-container {
 .products-header .stars {
   position: absolute;
   right: 0rem;
+  animation: alternateSize 2s ease-in-out infinite;
+}
+.products-header .stars2 {
+  position: absolute;
+  left: 0rem;
   animation: alternateSize 2s ease-in-out infinite;
 }
 .products-header .heading-container {

@@ -219,11 +219,11 @@ header{ height: 80vh;
 }
 .testimonials{ margin-top: 3em; margin-bottom: 3em;
     background-image: url('../images/testimonials.jpg');
-    .heading{display: flex; align-items: center; 
+    .heading{display: flex; align-items: center;  
         color: $green; font-family: $rubik;
     }
     p{line-height: 1.66em; color: $green; font-family: $rubik; }
-    h2{ margin-top: 0.4em; span{ font-family: $poppins; font-weight: 900; font-size: 1.7rem; }
+    h3{ margin-top: 0.4em; span{ font-family: $poppins; font-weight: 900; font-size: 1.7rem; }
     color: $green; font-family: $poppins; font-weight: 100; font-size: 2rem;
     
 }
@@ -241,8 +241,8 @@ header{ height: 80vh;
             img{object-fit: contain; height: 80%; width: 80%; margin-left: 2em; }
             }
     }
-    .name{ font-family: $poppins; font-weight: 600;  font-size: 1.2rem;
-    h3{color: $icon ;}
+    .name{ 
+    h3{color: $icon ; font-family: $poppins; font-weight: 600;  font-size: 1.2rem;}
     }
 
 }
@@ -291,7 +291,7 @@ footer{ background: $icon; background: $dark-blue; color: white;
     form{display: flex; width: 80%; input{width: 80%; height: 2.1rem;} margin-top: 1em;
          button{width: 20%; background: $light-blue; color: white;height: 2.1rem; } 
         input, button{outline: none; border: none;  }
-        input{background: rgba(255, 255, 255, 0.22);}
+        input{background: rgba(255, 255, 255, 0.22); border-radius: 0;}
         input::placeholder{color: white; font-family: $rubik; padding-left: 0.5em; }
     }
     .facebook-button{ background: $light-blue; font-family: $rubik;  color: white; border: none; padding: 0.8rem 1.3rem; }
@@ -310,6 +310,7 @@ footer{ background: $icon; background: $dark-blue; color: white;
 
 .products-header{ height: 25vh; position: relative; z-index: -2;
     .stars{position: absolute; right: 0rem;  animation: alternateSize 2s ease-in-out infinite;  }
+    .stars2{position: absolute; left: 0rem;  animation: alternateSize 2s ease-in-out infinite;  }
     background-image: unset;
     // background-image: url('../images/stars.png'); background-repeat: no-repeat; background-position-x: right;
     background-color: rgb(16, 16, 16);
