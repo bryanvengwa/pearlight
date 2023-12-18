@@ -34,6 +34,7 @@ body {
     overflow-x: hidden !important;
 	line-height: 1;
     position: relative;
+    scroll-behavior: smooth;
 }
 ol, ul {
 	list-style: none;
@@ -55,6 +56,7 @@ $icon : rgb(30, 0 ,132);
 $dark-blue: rgb(2,6,60);
 $gold: #D4AF37;
 $green: rgb(30, 0 ,132);
+$font-color: #3a4268;
 // $green: #59A573;
 $green-2:#59A573;
 $rubik : 'Rubik', sans-serif;
@@ -341,9 +343,9 @@ footer{ background: $icon; background: $dark-blue; color: white;
     }
     }
 
-.products-container{display: flex; gap: 1em; align-items: center; flex-wrap: wrap;  margin-top: 2rem;}
-.categories-container{ margin-top: 2rem; display: flex; display: none; flex-direction: column; align-items: center; width: 45%; 
-    .flex-container{ display: flex; align-items: center; gap: 1rem;
+.products-container{display: flex;gap: 1em; align-items: center; flex-wrap: wrap;  margin-top: 2rem;}
+.categories-container{ margin-top: 2rem;  display: flex; display: none; flex-direction: column; align-items: center; width: 45%; 
+    .flex-container{ display: flex;    align-items: center; gap: 1rem;
         h2{font-family: $poppins;  }
         .line{height: 3px; width: 3rem; background-color: $light-blue;}
   
@@ -355,6 +357,44 @@ footer{ background: $icon; background: $dark-blue; color: white;
     }
 }
 
+}
+
+// Contact section information
+.contact-section{ background-color: rgb(244,247,252);
+    .heading-container{width: 90%;   display: flex; align-items: center; gap: 0.75em; align-items: center; justify-content: flex-start;
+        h1{color: $icon; font-size: $poppins; }
+    .line{height: 4px; width: 3rem; background-color: $light-blue;}
+    }
+    h2{color: $icon; font-family: $poppins; font-weight: 600; }
+  
+    .flex-container{display: flex; flex-direction: column-reverse; gap: 1em;
+        .left{ align-self: center; gap: 1em; display: flex; flex-direction: column; justify-content: center;
+            .heading{display: flex; align-items: center; img{margin-top: -5px;}
+                color: $icon; font-family: $rubik; 
+            }
+            .cards{display: flex !important; align-items: center; background: white; width: 19rem; height: 7rem;
+                .image-container{  width: 30%; display: flex; justify-content: center; align-items: center;
+                    img{object-fit: contain; width: 60%; height: 60%;}
+                }
+                .text-container{ width: 70%;
+
+                }
+             }
+        }
+        .right{display: flex; flex-direction: column; align-items: center; 
+        p{color: $font-color; text-align: center; width: 90%;}
+        }
+   
+    }
+    form{ width: 90%; display: flex; flex-direction: column;
+        label{color: $icon; font-size: $poppins; }
+        input{margin-bottom: 0.5em;}
+        .input-container{display: flex; flex-direction: column; gap: 0.2rem; }
+        .flex-container{display: flex; flex-direction: column;
+        }
+        textarea{margin-bottom: 0.7em;}
+        button{background: rgb(53,147,214); color: white;  width: 65%; border: none; padding: 0.75em 1.75em; border-radius:5px ;}
+    }
 }
 
 /*
@@ -406,6 +446,43 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     }
     .slider-section{    margin-top: unset;}
+
+    
+    .contact-section{
+        .heading-container{width: 90%;   display: flex; align-items: center; gap: 0.75em; align-items: center; justify-content: flex-start;
+            h1{color: $icon; font-size: $poppins; }
+        .line{height: 4px; width: 3rem; background-color: $light-blue;}
+        }
+        h2{color: $icon; font-family: $poppins; font-weight: 600; }
+      
+        .flex-container{ width: 100%;flex-direction: row; gap: 1em;
+            .left{ align-self: center; gap: 1em; display: flex; flex-direction: column; width: 50%; align-items: center;
+                .heading{display: flex; align-items: center; img{margin-top: -5px;}
+                    color: $icon; font-family: $rubik; 
+                }
+                .cards{display: flex !important; align-items: center; background: white; width: 19rem; height: 7rem;
+                    .image-container{  width: 30%; display: flex; justify-content: center; align-items: center;
+                        img{object-fit: contain; width: 60%; height: 60%;}
+                    }
+                    .text-container{ width: 70%;
+    
+                    }
+                 }
+            }
+            .right{display: flex; flex-direction: column; align-items: center;  width: 60%;
+            p{color: $font-color; text-align: center; width: 90%;}
+            }
+       
+        }
+        form{ width: 90%; display: flex; flex-direction: column;
+            label{color: $icon; font-size: $poppins; }
+            input{margin-bottom: 0.5em;}
+            .input-container{display: flex; flex-direction: column; gap: 0.2rem; }
+            .flex-container{display: flex; flex-direction: column;
+            }
+        }
+    }
+    
 
 }
 
