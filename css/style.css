@@ -1257,6 +1257,113 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   header {
     margin-top: 1em;
   }
+  .contact-section .heading-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .contact-section .heading-container h1 {
+    color: rgb(30, 0, 132);
+    font-size: "Poppins", sans-serif;
+  }
+  .contact-section .heading-container .line {
+    height: 4px;
+    width: 3rem;
+    background-color: rgb(23, 123, 246);
+  }
+  .contact-section h2 {
+    color: rgb(30, 0, 132);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  .contact-section .flex-container {
+    width: 100%;
+    flex-direction: row;
+    gap: 1em;
+  }
+  .contact-section .flex-container .left {
+    align-self: center;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+  }
+  .contact-section .flex-container .left .heading {
+    display: flex;
+    align-items: center;
+    color: rgb(30, 0, 132);
+    font-family: "Rubik", sans-serif;
+  }
+  .contact-section .flex-container .left .heading img {
+    margin-top: -5px;
+  }
+  .contact-section .flex-container .left .cards {
+    display: flex !important;
+    align-items: center;
+    background: white;
+    width: 23rem;
+    height: 7rem;
+  }
+  .contact-section .flex-container .left .cards .image-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-section .flex-container .left .cards .image-container img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 60%;
+    height: 60%;
+  }
+  .contact-section .flex-container .left .cards .text-container {
+    width: 70%;
+  }
+  .contact-section .flex-container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+  .contact-section .flex-container .right p {
+    color: #3a4268;
+    text-align: center;
+    width: 90%;
+  }
+  .contact-section form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section form label {
+    color: rgb(30, 0, 132);
+    font-size: "Poppins", sans-serif;
+  }
+  .contact-section form input {
+    margin-bottom: 0.5em;
+  }
+  .contact-section form .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .contact-section form .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-section form .flex-container input {
+    width: 100%;
+  }
+  .contact-section form .flex-container .input-container {
+    width: 100%;
+  }
+  .contact-section form button {
+    width: 40%;
+  }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 /*
