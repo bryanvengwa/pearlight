@@ -81,41 +81,10 @@ table {
   justify-content: space-between;
 }
 
-.mobile-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 5rem;
-  background: transparent;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.208);
-  width: 100%;
-}
-.mobile-nav .flex-container {
-  width: 90%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.mobile-nav .hamburger-menu {
-  width: 3rem;
-  height: 3.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.4rem;
-}
-.mobile-nav .hamburger-menu .bar {
-  background: black;
-  transition: 0.3s;
-  height: 0.4rem;
-  border-radius: 2px;
-}
-
 .links {
   display: flex;
   flex-direction: column;
-  gap: 2.3em;
+  gap: 1em;
 }
 .links li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.277);
@@ -147,6 +116,7 @@ table {
   width: 100vw;
 }
 .slider-section .card-section {
+  display: none !important;
   overflow-y: scroll;
   z-index: 34;
   position: absolute;
@@ -441,6 +411,7 @@ table {
 header {
   height: 80vh;
   background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
 }
 header .text-container {
   width: 100%;
@@ -707,8 +678,10 @@ footer form input {
 footer form button {
   width: 20%;
   background: rgb(23, 123, 246);
-  color: white;
   height: 2.1rem;
+}
+footer form button i {
+  color: white !important;
 }
 footer form input, footer form button {
   outline: none;
@@ -941,7 +914,9 @@ footer .flex-container .img-container {
 }
 .contact-section .heading-container h1 {
   color: rgb(30, 0, 132);
-  font-size: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .contact-section .heading-container .line {
   height: 4px;
@@ -995,6 +970,7 @@ footer .flex-container .img-container {
 }
 .contact-section .flex-container .left .cards .text-container {
   width: 70%;
+  font-family: "Poppins", sans-serif;
 }
 .contact-section .flex-container .right {
   display: flex;
@@ -1003,7 +979,8 @@ footer .flex-container .img-container {
 }
 .contact-section .flex-container .right p {
   color: #3a4268;
-  text-align: center;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
   width: 90%;
 }
 .contact-section form {
@@ -1013,7 +990,7 @@ footer .flex-container .img-container {
 }
 .contact-section form label {
   color: rgb(30, 0, 132);
-  font-size: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .contact-section form input {
   margin-bottom: 0.5em;
@@ -1033,6 +1010,7 @@ footer .flex-container .img-container {
 .contact-section form button {
   background: rgb(53, 147, 214);
   color: white;
+  font-family: "Poppins", sans-serif;
   width: 65%;
   border: none;
   padding: 0.75em 1.75em;
